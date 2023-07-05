@@ -1,0 +1,10 @@
+**/.DS_Store
+node_modules
+
+/.cache
+/public/build
+/build
+.env
+
+# Local Netlify folder
+.netlify
