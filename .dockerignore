@@ -1,0 +1,8 @@
+**/.DS_Store
+.env.development
+.git
+.gitignore
+README.md
+package-lock.json
+build
+node_modules
