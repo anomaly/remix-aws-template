@@ -1,6 +1,10 @@
-# Welcome to Remix!
+# Welcome to Remix AWS Template
 
-- [Remix Docs](https://remix.run/docs)
+The purpose of this repository is to provide a template for deploying a Remix application to AWS based on the express server. The `remix` application will provide Kubernetes `probes` for health and readiness checks. 
+
+The template was created using `npx create-remix@latest`
+
+Ideally we want to merge what we learn here into the `psychedelic-stack` repository in a separate branch.
 
 ## Development
 
