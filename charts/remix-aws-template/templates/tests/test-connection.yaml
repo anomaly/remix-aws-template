@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "remix-aws-template.fullname" . }}-test-connection"
+  labels:
+    {{- include "remix-aws-template.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['{{ include "remix-aws-template.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never
